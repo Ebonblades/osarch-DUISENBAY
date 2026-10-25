@@ -1,8 +1,8 @@
 # Lab 1 — Your first virtual machine
 
-Pair: <you> / <partner>   Driver first half: <name>
+Pair: Duisenbay Bauyrzhan   Driver first half: none
 Machine: ACER, WINDOWS, guest Ubuntu Server 
-Date: <dd.mm.2026>
+Date: <25.10.2026>
 
 ## What I did
 1. Installed VirtualBox Version 7.2.20 r175154. Licence: https://www.virtualbox.org/wiki/Licensing_FAQ
