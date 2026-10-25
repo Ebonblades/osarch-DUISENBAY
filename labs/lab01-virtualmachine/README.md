@@ -13,7 +13,7 @@ cat /etc/hostname | to verify the host name.
 sudo rm /etc/hostname | to delete it.
 5. Rolled back to clean-install: 
 cat /etc/hostname | to show the host name after snapshot.
-hostname
+hostname.
 
 ## Resource justification
 2 vCPUs from 24 as it is enough for the labolatory works,
