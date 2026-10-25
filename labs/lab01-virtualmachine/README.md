@@ -9,10 +9,10 @@ Date: <25.10.2026>
 2. Created VM lab01-ubuntu: 2 vCPU, 4 GB RAM, 25 GB dynamic disk, bridged adapter.
 3. Installed Ubuntu Server, took snapshot clean-install.
 4. Broke it: 
-cat /etc/hostname | to verify the host name
-sudo rm /etc/hostname | to delete it
+cat /etc/hostname | to verify the host name.
+sudo rm /etc/hostname | to delete it.
 5. Rolled back to clean-install: 
-cat /etc/hostname | to show the host name after snapshot
+cat /etc/hostname | to show the host name after snapshot.
 hostname
 
 ## Resource justification
