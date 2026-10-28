@@ -29,6 +29,6 @@ I tried setting up SSH and ultimately failed, I will proceed asking in next less
 ## Evidence
 - [evidence/vm-settings.png](evidence/vm-settings.png) — CPU, memory and disk as configured
 - [evidence/guest-release.txt](evidence/guest-release.png) — Ubuntu Server is running in the guest
-- [evidence/broken.png](evidence/broken.png) — the guest in its broken state
+- [evidence/broken1.png](evidence/broken1.png) — the guest in its broken state
 - [evidence/snapshot-list.png](evidence/snapshot-list.png) — the snapshot, after the rollback
 - [evidence/restored.png](evidence/restored.png) - restored guest
