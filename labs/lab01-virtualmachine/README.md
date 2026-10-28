@@ -18,7 +18,7 @@ hostname.
 ## Resource justification
 2 vCPUs from 24 as it is enough for the labolatory works,
 4 GB RAM from total 16 GB to maintain enough memory for the OS,
-25 GB of disc memory as stated in requirements.
+25 GB of disc memory as it is required to complete all of the lab works and not run out of memory.
 
 ## Result
 The VM boots; the break-and-rollback cycle is shown in the evidence below.
