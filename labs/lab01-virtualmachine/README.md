@@ -16,9 +16,9 @@ cat /etc/hostname | to show the host name after snapshot.
 hostname.
 
 ## Resource justification
-2 vCPUs from 24 as it is enough for the labolatory works,
-4 GB RAM from total 16 GB to maintain enough memory for the OS,
-25 GB of disc memory as it is required to complete all of the lab works and not run out of memory.
+2 vCPUs as it is enough for the labolatory works and it won't strain the PC as it has 24,
+4 GB RAM to maintain enough memory for the OS, while keeping 12 remaining GB from my pc for main OS to work,
+25 GB of disc memory as it is required to complete all of the lab works and not run out of memory, the PC has 100 more to spare.
 
 ## Result
 The VM boots; the break-and-rollback cycle is shown in the evidence below.
