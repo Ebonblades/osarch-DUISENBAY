@@ -6,7 +6,7 @@ Date: <25.10.2026>
 
 ## What I did
 1. Installed VirtualBox Version 7.2.20 r175154. Licence: https://www.virtualbox.org/wiki/Licensing_FAQ
-2. Created VM lab01-ubuntu: 2 vCPU, 4 GB RAM, 25 GB dynamic disk, bridged adapter.
+2. Created VM lab01-ubuntu: 2 vCPU, 4 GB RAM, 25 GB dynamic disk, NAT.
 3. Installed Ubuntu Server, took snapshot clean-install.
 4. Broke it: 
 cat /etc/hostname | to verify the host name.
