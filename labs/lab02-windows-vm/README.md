@@ -18,7 +18,7 @@ Date: 02.11.26
      [VirtualBox · NAT · 10.0.2.0/24]
           /                        \
 lab01-ubuntu                  lab02-windows
-10.0.2.9                10.0.2.10
+10.0.2.9                      10.0.2.10
 
 ## Result
 | | Before | After |
