@@ -1,0 +1,1 @@
+enp0s3           UP             10.0.2.9/24 metric 1024 fe80::a00:27ff:fe0c:f40e/64
