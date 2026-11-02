@@ -1,0 +1,51 @@
+UBUNTU:  
+ping to windows:  
+
+PING 10.0.2.10 (10.0.2.10) 56(84) bytes of data.
+64 bytes from 10.0.2.10: icmp_seq=1 ttl=128 time=1.68 ms
+64 bytes from 10.0.2.10: icmp_seq=2 ttl=128 time=1.53 ms
+64 bytes from 10.0.2.10: icmp_seq=3 ttl=128 time=2.39 ms
+64 bytes from 10.0.2.10: icmp_seq=4 ttl=128 time=1.94 ms
+
+--- 10.0.2.10 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3007ms
+rtt min/avg/max/mdev = 1.527/1.885/2.390/0.326 ms
+
+ping to ubuntu.com: 
+ 
+PING ubuntu.com (185.125.190.21) 56(84) bytes of data.
+64 bytes from website-content-cache-2.ps5.canonical.com (185.125.190.21): icmp_seq=1 ttl=64 time=139 ms
+64 bytes from website-content-cache-2.ps5.canonical.com (185.125.190.21): icmp_seq=2 ttl=64 time=161 ms
+64 bytes from website-content-cache-2.ps5.canonical.com (185.125.190.21): icmp_seq=3 ttl=64 time=115 ms
+64 bytes from website-content-cache-2.ps5.canonical.com (185.125.190.21): icmp_seq=4 ttl=64 time=205 ms
+
+--- ubuntu.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3007ms
+rtt min/avg/max/mdev = 115.101/154.840/204.958/33.136 ms
+
+WINDOWS:
+ping to ubuntu:  
+
+Pinging 10.0.2.9 with 32 bytes of data:
+Reply from 10.0.2.9: bytes=32 time=4ms TTL=64
+Reply from 10.0.2.9: bytes=32 time<1ms TTL=64
+Reply from 10.0.2.9: bytes=32 time=5ms TTL=64
+Reply from 10.0.2.9: bytes=32 time=1ms TTL=64
+
+Ping statistics for 10.0.2.9:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 5ms, Average = 2ms  
+
+ping ubuntu.com
+
+Pinging ubuntu.com [185.125.190.29] with 32 bytes of data:
+Reply from 185.125.190.29: bytes=32 time=143ms TTL=128
+Reply from 185.125.190.29: bytes=32 time=211ms TTL=128
+Reply from 185.125.190.29: bytes=32 time=114ms TTL=128
+Reply from 185.125.190.29: bytes=32 time=132ms TTL=128
+
+Ping statistics for 185.125.190.29:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 114ms, Maximum = 211ms, Average = 150ms
