@@ -11,14 +11,15 @@ Date: 02.11.26
 5. Overcommitment: set 10 GB + 10 GB on a 16 GB host.
 
 ## Network diagram
-         Internet
-                 |
-      Host laptop 192.168.3.29 (home Wi-Fi)
-                 |
-     [VirtualBox · NAT · 10.0.2.0/24]
-          /                        \
-lab01-ubuntu                  lab02-windows
-10.0.2.9                      10.0.2.10
+               Internet
+                  |
+     Host laptop 192.168.3.29 (home Wi-Fi)
+                  |
+    [VirtualBox · NAT · 10.0.2.0/24]
+         /                 \
+   lab01-ubuntu      lab02-windows
+     10.0.2.9          10.0.2.10
+
 
 ## Result
 | | Before | After |
