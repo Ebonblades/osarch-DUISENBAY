@@ -17,7 +17,7 @@ Date: 02.11.26
      Host laptop 192.168.3.29 (home Wi-Fi)
                   |
     [VirtualBox · NAT · 10.0.2.0/24]
-         /                 \\
+         /                 \
    lab01-ubuntu      lab02-windows
      10.0.2.9          10.0.2.10
 ```
@@ -28,12 +28,13 @@ Date: 02.11.26
 | | Before | After |
 |---|---|---|
 | Host RAM in use | | |
-| Available | | |
-| Committed / Swap used | | |
-| What I noticed | — | |
+| Available |8 GB |1.4 GB |
+| Committed / Swap used |13.1/30.7 GB |34.4/35/8 GB |
+| What I noticed | — |The size of committed threshold exceeded the previous values, it happened so the machine could facilitate enough memory for the committed values |
 
 ## What did not work the first time
-<At least one thing: what I saw, what it turned out to be, what I did.>
+First windows virtual machine did not launch properly, leaving a blank screen, after which I changed the allocated vCPUs from 2 to 4 as UEFI demanded more than 2.
+Next there was a stutter with the attempt to ping from UBUNTU to Windows, the connection timed out. Turned out the problem was the Firewall restriction for ICMP echo requests, which are blocked by firewall as default, so I needed to make an exclusion through the command, after which the ping attempt passed successfully.
 
 ## Evidence
 - [evidence/ipconfig-windows.txt](evidence/ipconfig-windows.txt) — Windows address
