@@ -62,12 +62,12 @@ New-NetFirewallRule -DisplayName "Allow ping in (ICMPv4)" -Protocol ICMPv4 -Icmp
 7. **Verified Inter-VM and Internet Connectivity:**
 ```bash
 # Executed on Ubuntu Server:
-ping -c 4 10.0.2.15
+ping -c 4 10.0.2.10
 ping -c 4 ubuntu.com
 ```
 ```powershell
 # Executed on Windows 11:
-ping 10.0.2.4
+ping 10.0.2.9
 ping ubuntu.com
 ```
 8. **Created Golden Snapshot Baselines:** Powered down both virtual machines and created a clean snapshot named `clean-install` on each to establish an instant rollback state.
