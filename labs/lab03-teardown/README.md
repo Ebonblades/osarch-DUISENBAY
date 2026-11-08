@@ -5,51 +5,51 @@ Pair: Bauyrzhan · Date: 11.8.2026
 Part 1 — Ten parts
 AMD Ryzen 5 7600
 6-core/12-thread processor, 5.1 GHz, 38 MB cache, 65 W. Connects to an AM5 socket. Limit: fits only AM5 motherboards; memory controller supports only DDR5.  
-- evidence/windows-specs.txt — evidence/amd-ryzen-5-7600.png
+- [evidence/amd-ryzen-5-7600.png](evidence/amd-ryzen-5-7600.png)
 
 
 
 Intel Core i5-13400
 10-core/16-thread processor, 4.60 GHz, 20 MB cache, 65 W. Connects to an LGA1700 socket. Limit: fits only LGA1700 motherboards.  
-- evidence/windows-specs.txt — evidence/intel-core-i5-13400.png
+- [evidence/intel-core-i5-13400.png](evidence/intel-core-i5-13400.png)
 
 
 ASUS PRIME B650M-A
 Micro-ATX motherboard, AMD B650 chipset. Connects to an AM5 processor, DDR5 memory, M.2 NVMe, and SATA drives. Limit: supports only compatible AMD Ryzen processors; DDR5 slots make DDR4 impossible.  
-- evidence/windows-specs.txt — evidence/asus-prime-b560m-a.png
+- [evidence/windows-specs.txt](evidence/asus-prime-b560m-a.png)
 
 
 MSI PRO B760M-A WIFI DDR4
 Micro-ATX motherboard, Intel B760 chipset, Wi-Fi. Connects to an LGA1700 processor, DDR4 memory, M.2 NVMe, and SATA drives. Limit: supports only compatible Intel Core processors; DDR4 slots make DDR5 impossible.  
-- evidence/windows-specs.txt — evidence/msi-pro-b760m-a-wifi-ddr4.png
+- [evidence/msi-pro-b760m-a-wifi-ddr4.png](evidence/msi-pro-b760m-a-wifi-ddr4.png)
 
 Kingston FURY Beast DDR5-5600, 16 GB
 DDR5 UDIMM, 16 GB, 5600 MT/s, 288 pins. Connects to a desktop DDR5 slot, one per memory channel. Limit: fits only DDR5 boards; the notch makes DDR4 slots impossible.  
-- evidence/windows-specs.txt — evidence/kingston-fury-beast-ddr5-5600-16-gb.png
+- [evidence/kingston-fury-beast-ddr5-5600-16-gb.png](evidence/kingston-fury-beast-ddr5-5600-16-gb.png)
 
 Crucial DDR4-3200, 16 GB DIMM
 DDR4 UDIMM, 16 GB, 3200 MT/s, 288 pins. Connects to a desktop DDR4 slot, one per memory channel. Limit: fits only DDR4 boards; the notch makes DDR5 slots impossible.  
-- evidence/windows-specs.txt — evidence/crucial-ddr4-3200-16-gb-dimm.png
+- [evidence/crucial-ddr4-3200-16-gb-dimm.png](evidence/crucial-ddr4-3200-16-gb-dimm.png)
 
 
 Samsung 990 PRO 1 TB
 NVMe PCIe 4.0 x4 SSD, 1 TB, M.2 2280, 7450 MB/s. Connects to an M.2 motherboard slot. Limit: requires an 80mm M.2 slot; speed drops to ~3500 MB/s on older PCIe 3.0 boards.  
-- evidence/windows-specs.txt — evidence/samsung-990-pro-1-tb.png
+- [evidence/samsung-990-pro-1-tb.png](evidence/samsung-990-pro-1-tb.png)
 
 
 Samsung 870 EVO 1 TB
 SATA SSD, 1 TB, 2.5-inch, 560 MB/s. Connects to a motherboard SATA port and power supply SATA cable. Limit: SATA interface caps speed at roughly 550 MB/s.  
-- evidence/windows-specs.txt — evidence/samsung-870-evo-1-tb.png
+- [evidence/samsung-870-evo-1-tb.png](evidence/samsung-870-evo-1-tb.png)
 
 
 Corsair RM750e (750 W)
 750 W power supply, 80 PLUS Gold, ATX 3.0, fully modular. Connects to motherboard 24-pin and 8-pin CPU headers, graphics card, and drives. Limit: total system draw cannot exceed 750 watts.  
-- evidence/windows-specs.txt — evidence/corsair-rm750e-750w.png
+- [evidence/corsair-rm750e-750w.png](evidence/corsair-rm750e-750w.png)
 
 
 Stock Cooler (Intel Laminar RM1 / AMD Wraith Stealth)
 Down-draft air cooler. Connects to the designated CPU socket and motherboard 4-pin fan header. Limit: fits only the specific socket it is bundled for; heat removal maxes out around 65 W.  
-- evidence/windows-specs.txt — evidence/intel-laminar-rm1.png
+- [evidence/intel-laminar-rm1.png](evidence/intel-laminar-rm1.png)
 
 ## Two builds
 
@@ -92,5 +92,5 @@ Windows reported the host's physical hardware identities directly, showing speci
 Commands provided to retrieve specs did not work, after which I tried typing each command individually with presented code ({ echo '$ lscpu'; lscpu; } >> evidence/linux-specs.txt for ubuntu and ... | Out-File evidence\windows-specs.txt -Encoding utf8 -Append for windows) individually, after which it worked out
 
 ## Evidence
-- [evidence/windows-specs.txt](evidence/windows-specs.txt) — Windows address
-- evidence/linux-specs.txt — evidence/linux-specs.txt
+- [evidence/windows-specs.txt](evidence/windows-specs.txt) — Windows specs
+- [evidence/linux-specs.txt](evidence/linux-specs.txt) — Linux specs
