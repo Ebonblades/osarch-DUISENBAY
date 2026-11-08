@@ -16,7 +16,7 @@ Intel Core i5-13400
 
 ASUS PRIME B650M-A
 Micro-ATX motherboard, AMD B650 chipset. Connects to an AM5 processor, DDR5 memory, M.2 NVMe, and SATA drives. Limit: supports only compatible AMD Ryzen processors; DDR5 slots make DDR4 impossible.  
-- [evidence/windows-specs.txt](evidence/asus-prime-b560m-a.png)
+- [evidence/asus-prime-b560m-a.png](evidence/asus-prime-b560m-a.png)
 
 
 MSI PRO B760M-A WIFI DDR4
