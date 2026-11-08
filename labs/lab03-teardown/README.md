@@ -92,5 +92,5 @@ Windows reported the host's physical hardware identities directly, showing speci
 Commands provided to retrieve specs did not work, after which I tried typing each command individually with presented code ({ echo '$ lscpu'; lscpu; } >> evidence/linux-specs.txt for ubuntu and ... | Out-File evidence\windows-specs.txt -Encoding utf8 -Append for windows) individually, after which it worked out
 
 ## Evidence
-- evidence/windows-specs.txt — evidence/windows-specs.txt
+- [evidence/windows-specs.txt](evidence/windows-specs.txt) — Windows address
 - evidence/linux-specs.txt — evidence/linux-specs.txt
