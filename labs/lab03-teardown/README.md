@@ -5,54 +5,54 @@ Pair: Bauyrzhan · Date: 11.8.2026
 Part 1 — Ten parts
 AMD Ryzen 5 7600
 6-core/12-thread processor, 5.1 GHz, 38 MB cache, 65 W. Connects to an AM5 socket. Limit: fits only AM5 motherboards; memory controller supports only DDR5.  
-- [evidence/amd-ryzen-5-7600.png](evidence/amd-ryzen-5-7600.png)
-https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600.html#product-specs
+- [evidence/amd-ryzen-5-7600.png](evidence/amd-ryzen-5-7600.png)  
+- https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600.html#product-specs
 
 
 Intel Core i5-13400
 10-core/16-thread processor, 4.60 GHz, 20 MB cache, 65 W. Connects to an LGA1700 socket. Limit: fits only LGA1700 motherboards.  
-- [evidence/intel-core-i5-13400.png](evidence/intel-core-i5-13400.png)
-https://www.intel.com/content/www/us/en/products/sku/230495/intel-core-i513400-processor-20m-cache-up-to-4-60-ghz/specifications.html
+- [evidence/intel-core-i5-13400.png](evidence/intel-core-i5-13400.png)  
+- https://www.intel.com/content/www/us/en/products/sku/230495/intel-core-i513400-processor-20m-cache-up-to-4-60-ghz/specifications.html
 
 ASUS PRIME B650M-A
 Micro-ATX motherboard, AMD B650 chipset. Connects to an AM5 processor, DDR5 memory, M.2 NVMe, and SATA drives. Limit: supports only compatible AMD Ryzen processors; DDR5 slots make DDR4 impossible.  
-- [evidence/asus-prime-b560m-a.png](evidence/asus-prime-b560m-a.png)
-https://www.asus.com/motherboards-components/motherboards/prime/prime-b650m-a/
+- [evidence/asus-prime-b560m-a.png](evidence/asus-prime-b560m-a.png)  
+- https://www.asus.com/motherboards-components/motherboards/prime/prime-b650m-a/
 
 MSI PRO B760M-A WIFI DDR4
 Micro-ATX motherboard, Intel B760 chipset, Wi-Fi. Connects to an LGA1700 processor, DDR4 memory, M.2 NVMe, and SATA drives. Limit: supports only compatible Intel Core processors; DDR4 slots make DDR5 impossible.  
-- [evidence/msi-pro-b760m-a-wifi-ddr4.png](evidence/msi-pro-b760m-a-wifi-ddr4.png)
-https://storage-asset.msi.com/datasheet/mb/global/PRO-B760M-A-WIFI-DDR4.pdf
+- [evidence/msi-pro-b760m-a-wifi-ddr4.png](evidence/msi-pro-b760m-a-wifi-ddr4.png)  
+- https://storage-asset.msi.com/datasheet/mb/global/PRO-B760M-A-WIFI-DDR4.pdf
 Kingston FURY Beast DDR5-5600, 16 GB
 DDR5 UDIMM, 16 GB, 5600 MT/s, 288 pins. Connects to a desktop DDR5 slot, one per memory channel. Limit: fits only DDR5 boards; the notch makes DDR4 slots impossible.  
-- [evidence/kingston-fury-beast-ddr5-5600-16-gb.png](evidence/kingston-fury-beast-ddr5-5600-16-gb.png)
+- [evidence/kingston-fury-beast-ddr5-5600-16-gb.png](evidence/kingston-fury-beast-ddr5-5600-16-gb.png)  
 https://www.kingston.com/datasheets/KF556C40BB-16.pdf
 Crucial DDR4-3200, 16 GB DIMM
 DDR4 UDIMM, 16 GB, 3200 MT/s, 288 pins. Connects to a desktop DDR4 slot, one per memory channel. Limit: fits only DDR4 boards; the notch makes DDR5 slots impossible.  
-- [evidence/crucial-ddr4-3200-16-gb-dimm.png](evidence/crucial-ddr4-3200-16-gb-dimm.png)
-https://eu.crucial.com/memory/eol_ddr4/ct16g4dfra32a
+- [evidence/crucial-ddr4-3200-16-gb-dimm.png](evidence/crucial-ddr4-3200-16-gb-dimm.png)  
+- https://eu.crucial.com/memory/eol_ddr4/ct16g4dfra32a
 
 
 Samsung 990 PRO 1 TB
 NVMe PCIe 4.0 x4 SSD, 1 TB, M.2 2280, 7450 MB/s. Connects to an M.2 motherboard slot. Limit: requires an 80mm M.2 slot; speed drops to ~3500 MB/s on older PCIe 3.0 boards.  
-- [evidence/samsung-990-pro-1-tb.png](evidence/samsung-990-pro-1-tb.png)
-https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_NVMe_SSD_990_PRO_Datasheet_Rev.1.0.pdf
+- [evidence/samsung-990-pro-1-tb.png](evidence/samsung-990-pro-1-tb.png)  
+- https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_NVMe_SSD_990_PRO_Datasheet_Rev.1.0.pdf
 
 
 Samsung 870 EVO 1 TB
 SATA SSD, 1 TB, 2.5-inch, 560 MB/s. Connects to a motherboard SATA port and power supply SATA cable. Limit: SATA interface caps speed at roughly 550 MB/s.  
-- [evidence/samsung-870-evo-1-tb.png](evidence/samsung-870-evo-1-tb.png)
-https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_SSD_870_EVO_Data_Sheet_Rev1.1_230509.pdf
+- [evidence/samsung-870-evo-1-tb.png](evidence/samsung-870-evo-1-tb.png)  
+- https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_SSD_870_EVO_Data_Sheet_Rev1.1_230509.pdf
 
 Corsair RM750e (750 W)
 750 W power supply, 80 PLUS Gold, ATX 3.0, fully modular. Connects to motherboard 24-pin and 8-pin CPU headers, graphics card, and drives. Limit: total system draw cannot exceed 750 watts.  
-- [evidence/corsair-rm750e-750w.png](evidence/corsair-rm750e-750w.png)
-https://www.corsair.com/ww/en/p/psu/cp-9020262-ww/rme-series-rm750e-fully-modular-low-noise-atx-power-supply-cp-9020262-ww#tab-techspecs
+- [evidence/corsair-rm750e-750w.png](evidence/corsair-rm750e-750w.png)  
+- https://www.corsair.com/ww/en/p/psu/cp-9020262-ww/rme-series-rm750e-fully-modular-low-noise-atx-power-supply-cp-9020262-ww#tab-techspecs
 
 Stock Cooler (Intel Laminar RM1 / AMD Wraith Stealth)
 Down-draft air cooler. Connects to the designated CPU socket and motherboard 4-pin fan header. Limit: fits only the specific socket it is bundled for; heat removal maxes out around 65 W.  
-- [evidence/intel-laminar-rm1.png](evidence/intel-laminar-rm1.png)
-https://www.intel.com/content/www/us/en/support/articles/000089190.html
+- [evidence/intel-laminar-rm1.png](evidence/intel-laminar-rm1.png)  
+- https://www.intel.com/content/www/us/en/support/articles/000089190.html
 ## Two builds
 
 ### Build 1
