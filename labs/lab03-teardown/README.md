@@ -64,7 +64,7 @@ Down-draft air cooler. Connects to the designated CPU socket and motherboard 4-p
 | SSD | Samsung 990 PRO 1 TB | Fits directly into the M.2 NVMe slot on the ASUS board. |
 | Power Supply | Corsair RM750e (750 W) | Provides the 24-pin and 8-pin ATX power needed by the board and CPU. |
 
-**What Build 1 still needs:** A CPU cooler. Because the single stock cooler from the list was allocated to Build 2, this processor will overheat without an AM5-compatible cooling solution.
+**What Build 1 still needs:** Build needs a physical case (Micro-ATX or ATX compatible) to safely mount the motherboard, power supply, and provide a physical power button to turn the system on.
 
 ### Build 2
 | Part | Model | Why it fits here |
