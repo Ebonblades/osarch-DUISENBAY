@@ -1,10 +1,11 @@
-﻿
+
+Get-CimInstance Win32_Processor | Select Name, NumberOfCores, NumberOfLogicalProcessors, MaxClockSpeed
 Name                         NumberOfCores NumberOfLogicalProcessors MaxClockSpeed
 ----                         ------------- ------------------------- -------------
 Intel(R) Core(TM) i9-14900HX            24                        32          2200
 
 
-
+Get-CimInstance Win32_PhysicalMemory | Select DeviceLocator, Capacity, Speed, ConfiguredClockSpeed, SMBIOSMemoryType, FormFactor
 
 DeviceLocator        : Controller0-ChannelA-DIMM0
 Capacity             : 8589934592
@@ -20,18 +21,17 @@ ConfiguredClockSpeed : 5600
 SMBIOSMemoryType     : 34
 FormFactor           : 12
 
-
-
+Get-PhysicalDisk | Select FriendlyName, MediaType, BusType, Size
 
 FriendlyName                    MediaType BusType          Size
 ------------                    --------- -------          ----
 NVMe SAMSUNG MZVL21T0HCLR-00B07 SSD       NVMe    1024209543168
 
-
+Get-Volume C
 
 DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus SizeRemaining     Size
 ----------- ------------ -------------- --------- ------------ ----------------- -------------     ----
 C           Acer         NTFS           Fixed     Healthy      OK                      87.2 GB 952.6 GB
 
-
+$env:PROCESSOR_ARCHITECTURE
 AMD64
