@@ -1,4 +1,4 @@
-$ lscpu
+{ echo '$ lscpu'; lscpu; } >> evidence/linux-specs.txt
 Architecture:                            x86_64
 CPU op-mode(s):                          32-bit, 64-bit
 Address sizes:                           39 bits physical, 48 bits virtual
@@ -42,16 +42,16 @@ Vulnerability Srbds:                     Not affected
 Vulnerability Tsa:                       Not affected
 Vulnerability Tsx async abort:           Not affected
 Vulnerability Vmscape:                   Not affected
-$ free -h
+{ echo '$ free -h'; free -h; } >> evidence/linux-specs.txt
                total        used        free      shared  buff/cache   available
 Mem:           3.3Gi       444Mi       2.8Gi       1.1Mi       342Mi       2.9Gi
 Swap:          2.0Gi          0B       2.0Gi
-$ sudo dmidecode -t memory
+{ echo '$ lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE'; lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE; } >> evidence/linux-specs.txt
 # dmidecode 3.6
 Getting SMBIOS data from sysfs.
 SMBIOS 2.5 present.
 
-$ lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE
+{ echo '$ lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE'; lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE; } >> evidence/linux-specs.txt
 NAME  MODEL         ROTA TRAN    SIZE
 loop0                  1         1.5M
 loop1                  1        66.8M
@@ -59,8 +59,8 @@ loop2                  1         1.5M
 loop3                  1        50.1M
 sda   VBOX HARDDISK    1 sata     25G
 sr0   VBOX CD-ROM      0 ata    1024M
-$ df -h /
+{ echo '$ df -h /'; df -h /; } >> evidence/linux-specs.txt
 Filesystem                         Size  Used Avail Use% Mounted on
 /dev/mapper/ubuntu--vg-ubuntu--lv   12G  5.3G  5.4G  50% /
-$ uname -m
+{ echo '$ uname -m'; uname -m; } >> evidence/linux-specs.txt
 x86_64
