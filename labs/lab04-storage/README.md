@@ -36,36 +36,36 @@ sda                         8:0    0   25G  0 disk
 ├─sda2                      8:2    0    2G  0 part /boot  
 └─sda3                      8:3    0   23G  0 part
   └─ubuntu--vg-ubuntu--lv 252:0    0 11.5G  0 lvm  /
-sdb                         8:16   0    1G  0 disk
-└─sdb1                      8:17   0 1022M  0 part
-sdc                         8:32   0    1G  0 disk
-└─sdc1                      8:33   0 1022M  0 part
-sdd                         8:48   0    1G  0 disk
-└─sdd1                      8:49   0 1022M  0 part
-sr0                        11:0    1 1024M  1 rom
-### After
-NAME                       SIZE TYPE  FSTYPE            MOUNTPOINTS
-loop0                      1.5M loop  squashfs          /snap/hwctl/123
-loop1                     66.8M loop  squashfs          /snap/core24/1643
-loop2                      1.5M loop  squashfs          /snap/hwctl/131
-loop3                     50.1M loop  squashfs          /snap/snapd/27710
-sda                         25G disk
-├─sda1                       1M part
-├─sda2                       2G part  ext4              /boot
-└─sda3                      23G part  LVM2_member
-  └─ubuntu--vg-ubuntu--lv 11.5G lvm   ext4              /
-sdb                          1G disk
-└─sdb1                    1022M part  linux_raid_member
-  └─md0                   1021M raid1 ext4              /mnt/mirror
-sdc                          1G disk
-└─sdc1                    1022M part  linux_raid_member
-sdd                          1G disk
-└─sdd1                    1022M part  linux_raid_member
-  └─md0                   1021M raid1 ext4              /mnt/mirror
-sr0                       1024M rom
+sdb                         8:16   0    1G  0 disk  
+└─sdb1                      8:17   0 1022M  0 part  
+sdc                         8:32   0    1G  0 disk  
+└─sdc1                      8:33   0 1022M  0 part  
+sdd                         8:48   0    1G  0 disk  
+└─sdd1                      8:49   0 1022M  0 part  
+sr0                        11:0    1 1024M  1 rom  
+### After  
+NAME                       SIZE TYPE  FSTYPE            MOUNTPOINTS  
+loop0                      1.5M loop  squashfs          /snap/hwctl/123  
+loop1                     66.8M loop  squashfs          /snap/core24/1643  
+loop2                      1.5M loop  squashfs          /snap/hwctl/131  
+loop3                     50.1M loop  squashfs          /snap/snapd/27710  
+sda                         25G disk  
+├─sda1                       1M part  
+├─sda2                       2G part  ext4              /boot  
+└─sda3                      23G part  LVM2_member  
+  └─ubuntu--vg-ubuntu--lv 11.5G lvm   ext4              /  
+sdb                          1G disk  
+└─sdb1                    1022M part  linux_raid_member  
+  └─md0                   1021M raid1 ext4              /mnt/mirror  
+sdc                          1G disk  
+└─sdc1                    1022M part  linux_raid_member  
+sdd                          1G disk  
+└─sdd1                    1022M part  linux_raid_member  
+  └─md0                   1021M raid1 ext4              /mnt/mirror  
+sr0                       1024M rom  
 
 ## What I did
-### WINDOWS (Run in PowerShell as Administrator) ###
+### WINDOWS (Run in PowerShell as Administrator) ###  
 
 Get-Disk  
 Set-Disk -Number 1 -IsOffline $false  
