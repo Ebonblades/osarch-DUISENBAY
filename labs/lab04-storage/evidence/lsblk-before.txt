@@ -1,0 +1,15 @@
+$ lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINTS
+NAME                       SIZE TYPE FSTYPE      MOUNTPOINTS
+loop0                      1.5M loop squashfs    /snap/hwctl/123
+loop1                     66.8M loop squashfs    /snap/core24/1643
+loop2                      1.5M loop squashfs    /snap/hwctl/131
+loop3                     50.1M loop squashfs    /snap/snapd/27710
+sda                         25G disk             
+├─sda1                       1M part             
+├─sda2                       2G part ext4        /boot
+└─sda3                      23G part LVM2_member 
+  └─ubuntu--vg-ubuntu--lv 11.5G lvm  ext4        /
+sdb                          1G disk             
+sdc                          1G disk             
+sdd                          1G disk             
+sr0                       1024M rom              
