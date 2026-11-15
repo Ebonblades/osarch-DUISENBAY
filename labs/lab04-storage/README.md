@@ -2,20 +2,20 @@
 
 Pair: Duisenbay Bauyrzhan · Date: 11.16.2026 · Hypervisor: VirtualBox
 
-## Windows
-PS C:\WINDOWS\system32> Get-Disk | Select Number, FriendlyName, PartitionStyle, Size
+## Windows  
+PS C:\WINDOWS\system32> Get-Disk | Select Number, FriendlyName, PartitionStyle, Size  
 
-Number FriendlyName  PartitionStyle        Size
------- ------------  --------------        ----
-     0 VBOX HARDDISK GPT            68719476736
-     1 VBOX HARDDISK GPT             1073741824
+Number FriendlyName  PartitionStyle        Size  
+------ ------------  --------------        ----  
+     0 VBOX HARDDISK GPT            68719476736  
+     1 VBOX HARDDISK GPT             1073741824  
 
 
-PS C:\WINDOWS\system32> Get-Volume | Where FileSystemLabel -eq 'LAB04'
+PS C:\WINDOWS\system32> Get-Volume | Where FileSystemLabel -eq 'LAB04'  
 
-DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus SizeRemaining       Size
------------ ------------ -------------- --------- ------------ ----------------- -------------       ----
-E           LAB04        NTFS           Fixed     Healthy      OK                    990.77 MB 1007.93 MB
+DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus SizeRemaining       Size  
+----------- ------------ -------------- --------- ------------ ----------------- -------------       ----  
+E           LAB04        NTFS           Fixed     Healthy      OK                    990.77 MB 1007.93 MB  
 
 MBR or GPT: GPT, because Windows 11 requires UEFI booting and GPT supports modern disk sizes beyond 2 TB while keeping a backup copy of the partition table for data integrity.
 
