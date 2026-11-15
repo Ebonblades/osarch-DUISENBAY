@@ -26,8 +26,10 @@ MBR or GPT: GPT, because Windows 11 requires UEFI booting and GPT supports moder
 
 ## Linux — layout before and after
 ### Before
-NAME                      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
-loop0                       7:0    0  1.5M  1 loop /snap/hwctl/123
+NAME                      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS  
+
+loop0                       7:0    0  1.5M  1 loop /snap/hwctl/123  
+
 loop1                       7:1    0 66.8M  1 loop /snap/core24/1643
 loop2                       7:2    0  1.5M  1 loop /snap/hwctl/131
 loop3                       7:3    0 50.1M  1 loop /snap/snapd/27710
