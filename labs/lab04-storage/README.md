@@ -62,43 +62,42 @@ sr0                       1024M rom
 ## What I did
 ### WINDOWS (Run in PowerShell as Administrator) ###
 
-Get-Disk
-Set-Disk -Number 1 -IsOffline $false
-Initialize-Disk -Number 1 -PartitionStyle GPT
-New-Partition -DiskNumber 1 -UseMaximumSize -AssignDriveLetter | Format-Volume -FileSystem NTFS -NewFileSystemLabel LAB04
-Get-Disk | Select Number, FriendlyName, PartitionStyle, Size
-Get-Volume | Where FileSystemLabel -eq 'LAB04'
+Get-Disk  
+Set-Disk -Number 1 -IsOffline $false  
+Initialize-Disk -Number 1 -PartitionStyle GPT  
+New-Partition -DiskNumber 1 -UseMaximumSize -AssignDriveLetter | Format-Volume -FileSystem NTFS -NewFileSystemLabel LAB04  
+Get-Disk | Select Number, FriendlyName, PartitionStyle, Size  
+Get-Volume | Where FileSystemLabel -eq 'LAB04'  
 
 
 ### LINUX (Run in Ubuntu Terminal) ###
 
-# Step 3: Setup evidence folder and check disks
-mkdir -p ~/lab04/evidence && cd ~/lab04
-{ echo '$ lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINTS'; lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINTS; } > evidence/lsblk-before.txt
-cat evidence/lsblk-before.txt
+# Step 3: Setup evidence folder and check disks 
+mkdir -p ~/lab04/evidence && cd ~/lab04  
+{ echo '$ lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINTS'; lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINTS; } > evidence/lsblk-before.txt  
+cat evidence/lsblk-before.txt  
 
-# Step 4: Partition the three disks (Ensure your disks are sdb, sdc, sdd)
-for d in sdb sdc sdd; do
-  sudo parted -s /dev/$d mklabel gpt mkpart primary 1MiB 100% set 1 raid on
-done
-lsblk
+# Step 4: Partition the three disks (Ensure your disks are sdb, sdc, sdd)  
+for d in sdb sdc sdd; do  
+  sudo parted -s /dev/$d mklabel gpt mkpart primary 1MiB 100% set 1 raid on  
+done  
+lsblk  
 
 # Step 5: Build mirror
-sudo apt install -y mdadm
-sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb1 /dev/sdc1
-cat /proc/mdstat
-{ echo '$ cat /proc/mdstat'; cat /proc/mdstat; echo; echo '$ sudo mdadm --detail /dev/md0'; sudo mdadm --detail /dev/md0; } > evidence/array-healthy.txt
+sudo apt install -y mdadm  
+sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb1 /dev/sdc1  
+cat /proc/mdstat  
+{ echo '$ cat /proc/mdstat'; cat /proc/mdstat; echo; echo '$ sudo mdadm --detail /dev/md0'; sudo mdadm --detail /dev/md0; } > evidence/array-healthy.txt  
 
 # Step 6: File system, mount, proof file, and checksum
-# IMPORTANT: Replace <your names> below with your actual names!
-sudo mkfs.ext4 -L mirror /dev/md0
-sudo mkdir -p /mnt/mirror
-sudo mount /dev/md0 /mnt/mirror
-sudo chown $USER: /mnt/mirror
-echo "Lab 4 proof file — <your names> — $(date)" > /mnt/mirror/proof.txt
-head -c 20M /dev/urandom > /mnt/mirror/random.bin
-cd /mnt/mirror && { echo '$ sha256sum proof.txt random.bin'; sha256sum proof.txt random.bin; } > ~/lab04/evidence/checksum-before.txt; cd ~/lab04
-cat evidence/checksum-before.txt
+sudo mkfs.ext4 -L mirror /dev/md0  
+sudo mkdir -p /mnt/mirror  
+sudo mount /dev/md0 /mnt/mirror  
+sudo chown $USER: /mnt/mirror  
+echo "Lab 4 proof file — <your names> — $(date)" > /mnt/mirror/proof.txt  
+head -c 20M /dev/urandom > /mnt/mirror/random.bin  
+cd /mnt/mirror && { echo '$ sha256sum proof.txt random.bin'; sha256sum proof.txt random.bin; } > ~/lab04/evidence/checksum-before.txt; cd ~/lab04  
+cat evidence/checksum-before.txt  
 
 # Step 7: Fail one disk and test survival
 sudo mdadm /dev/md0 --fail /dev/sdc1
