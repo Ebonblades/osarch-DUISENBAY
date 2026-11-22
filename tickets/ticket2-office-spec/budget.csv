@@ -1,0 +1,47 @@
+role,component,model,price_kzt,source,date
+accountant,CPU,Intel Core i3-12100 OEM (LGA1700),66900,https://shop.kz/offer/protsessor-intel-core-i3-12100-lga1700-oem/,2026-11-23
+accountant,Cooler,DeepCool AG200,5990,https://shop.kz/offer/kuler-deepcool-ag200/,2026-11-23
+accountant,Motherboard,"MSI PRO H610M-G DDR4 (LGA1700, mATX)",43590,https://shop.kz/offer/materinskaya-plata-msi-pro-h610m-g-ddr4-lga1700/,2026-11-23
+accountant,Memory,Kingston FURY Beast Black 16GB (1x16GB) DDR4-3200 (KF432C16BB1/16),104990,https://shop.kz/offer/ddr-4-dimm-16gb-3200mhz-pc25600-kingston-fury-beast-black-box-kf432c16bb1-16/,2026-11-23
+accountant,Storage,Kingston NV3 1TB M.2 PCIe 4.0 NVMe SSD,92990,https://shop.kz/offer/ssd-nakopitel-1-tb-kingston-nv3-m-2-pcie-4-0/,2026-11-23
+accountant,PSU,DeepCool PF550 550W,25290,https://shop.kz/offer/blok-pitaniya-atx-550-w-deepcool-pf550/,2026-11-23
+accountant,Case,DeepCool CC560 WH V2,29990,https://shop.kz/offer/korpus-deepcool-cc560-wh-v2-white/,2026-11-23
+accountant,Monitor,"LG 24MS500-B 23.8"" IPS 1920x1080",56040,https://www.dns-shop.kz/product/4a4cb1621e5fd9cb/238-monitor-lg-24ms500-b-cernyj/,2026-11-23
+accountant,Peripherals,Logitech MK120 Wired Keyboard + Mouse,12990,https://shop.kz/offer/klaviatura-logitech-mk120-black-usb-mysh/,2026-11-23
+accountant,OS,Microsoft Windows 11 Home 64-bit,89790,https://www.sulpak.kz/g/antivirusiy-i-bezopasnost-microsoft-1596-142,2026-11-23
+accountant,TOTAL,Subtotal for accountant,528560,,2026-11-23
+sales,CPU,AMD Ryzen 5 5600GT OEM (AM4),99990,https://shop.kz/offer/protsessor-amd-ryzen-5-5600gt-am4-oem/,2026-11-23
+sales,Cooler,DeepCool AG200,5990,https://shop.kz/offer/kuler-deepcool-ag200/,2026-11-23
+sales,Motherboard,"Gigabyte B550M GAMING X (AM4, mATX)",69990,https://shop.kz/offer/materinskaya-plata-gigabyte-b550m-gaming-x-am4/,2026-11-23
+sales,Memory,Kingston FURY Beast Black 16GB (1x16GB) DDR4-3200 (KF432C16BB1/16),104990,https://shop.kz/offer/ddr-4-dimm-16gb-3200mhz-pc25600-kingston-fury-beast-black-box-kf432c16bb1-16/,2026-11-23
+sales,Storage,Kingston NV3 1TB M.2 PCIe 4.0 NVMe SSD,92990,https://shop.kz/offer/ssd-nakopitel-1-tb-kingston-nv3-m-2-pcie-4-0/,2026-11-23
+sales,PSU,DeepCool PF550 550W,25290,https://shop.kz/offer/blok-pitaniya-atx-550-w-deepcool-pf550/,2026-11-23
+sales,Case,DeepCool CC560 WH V2,29990,https://shop.kz/offer/korpus-deepcool-cc560-wh-v2-white/,2026-11-23
+sales,Monitor,"LG 24MS500-B 23.8"" IPS 1920x1080",56040,https://www.dns-shop.kz/product/4a4cb1621e5fd9cb/238-monitor-lg-24ms500-b-cernyj/,2026-11-23
+sales,Peripherals,Logitech MK120 Wired Keyboard + Mouse,12990,https://shop.kz/offer/klaviatura-logitech-mk120-black-usb-mysh/,2026-11-23
+sales,OS,Microsoft Windows 11 Home 64-bit,89790,https://www.sulpak.kz/g/antivirusiy-i-bezopasnost-microsoft-1596-142,2026-11-23
+sales,TOTAL,Subtotal for sales,588050,,2026-11-23
+web-dev,CPU,AMD Ryzen 5 7600 (AM5),93729,https://itmag.kz/p/88197-processor-amd-ryzen-5-7600-3-8gc-5-1ggc-tur/,2026-11-23
+web-dev,Cooler,DeepCool AG400,11990,https://shop.kz/offer/kuler-deepcool-ag400/,2026-11-23
+web-dev,Motherboard,"Gigabyte B650M GAMING WIFI6E (AM5, mATX, DDR5)",89990,https://shop.kz/offer/materinskaya-plata-gigabyte-b650m-gaming-wifi6e-am5-rev1-4/,2026-11-23
+web-dev,Memory,AGI Turbosprint RGB 32GB (2x16GB) DDR5-6000 (AGI6CSJ16UD858-DC),334990,https://shop.kz/offer/ddr-5-dimm-32-gb-6000-mhz-agi-turbosprint-rgb-2x16gb-kit-black-box-agi6csj16ud858-dc/,2026-11-23
+web-dev,Storage,Kingston NV3 1TB M.2 PCIe 4.0 NVMe SSD,92990,https://shop.kz/offer/ssd-nakopitel-1-tb-kingston-nv3-m-2-pcie-4-0/,2026-11-23
+web-dev,PSU,DeepCool PF550 550W,25290,https://shop.kz/offer/blok-pitaniya-atx-550-w-deepcool-pf550/,2026-11-23
+web-dev,Case,DeepCool CC560 WH V2,29990,https://shop.kz/offer/korpus-deepcool-cc560-wh-v2-white/,2026-11-23
+web-dev,Monitor,"LG 27QN600-B 27"" IPS 2560x1440 QHD",85899,https://itmag.kz/p/114573-monitor-27-lg-27qn600-b-aru-2560x1440-ips/,2026-11-23
+web-dev,Peripherals,Logitech MK120 Wired Keyboard + Mouse,12990,https://shop.kz/offer/klaviatura-logitech-mk120-black-usb-mysh/,2026-11-23
+web-dev,OS,Ubuntu Desktop 24.04 LTS (GNU GPL License),0,https://ubuntu.com/download/desktop,2026-11-23
+web-dev,TOTAL,Subtotal for web-dev,777858,,2026-11-23
+designer,CPU,Intel Core i5-12400F (LGA1700),61948,https://itmag.kz/p/72398-processor-intel-core-i5-12400f-1700/,2026-11-23
+designer,Cooler,DeepCool AG400,11990,https://shop.kz/offer/kuler-deepcool-ag400/,2026-11-23
+designer,Motherboard,"MSI PRO H610M-G DDR4 (LGA1700, mATX)",43590,https://shop.kz/offer/materinskaya-plata-msi-pro-h610m-g-ddr4-lga1700/,2026-11-23
+designer,Memory,Kingston FURY Beast 32GB (2x16GB) DDR4-3200 (KF432C16BB1K2/32WP),174140,https://neom.kz/catalog/pc-accessories/ram/komplekt-operativnoy-pamyati-kingston-fury-beast-kf432c16bb1k2-32wp-ddr4-32gb-kit-2x16gb-3200mhz-chye/,2026-11-23
+designer,GPU,MSI GeForce RTX 3060 Ventus 2X 12G OC,299990,https://shop.kz/offer/videokarta-msi-rtx-3060-ventus-2x-12-gb-geforce-rtx-3060/,2026-11-23
+designer,Storage,Kingston NV3 1TB M.2 PCIe 4.0 NVMe SSD,92990,https://shop.kz/offer/ssd-nakopitel-1-tb-kingston-nv3-m-2-pcie-4-0/,2026-11-23
+designer,PSU,DeepCool PF550 550W,25290,https://shop.kz/offer/blok-pitaniya-atx-550-w-deepcool-pf550/,2026-11-23
+designer,Case,DeepCool CC560 WH V2,29990,https://shop.kz/offer/korpus-deepcool-cc560-wh-v2-white/,2026-11-23
+designer,Monitor,"ASUS ProArt Display PA279CV 27"" 4K IPS",252000,https://itmag.kz/p/31631-monitor-asus-proart-pa279cv/,2026-11-23
+designer,Peripherals,Logitech MK120 Wired Keyboard + Mouse,12990,https://shop.kz/offer/klaviatura-logitech-mk120-black-usb-mysh/,2026-11-23
+designer,OS,Microsoft Windows 11 Home 64-bit,89790,https://www.sulpak.kz/g/antivirusiy-i-bezopasnost-microsoft-1596-142,2026-11-23
+designer,TOTAL,Subtotal for designer,1094708,,2026-11-23
+ALL,GRAND TOTAL,All 4 builds (monitors + OS + peripherals included),2989176,,2026-11-23

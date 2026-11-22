@@ -1,0 +1,39 @@
+# Ticket 2 — Office Builds
+
+All four machines meet the hard requirements: ≥ 16 GB RAM, 1 TB NVMe SSD, licensed OS, 1 monitor, and wired peripherals (keyboard + mouse). Every build is verified for CPU socket, RAM generation, M.2 interface, case clearance, and PSU wattage compatibility.
+
+---
+
+### Build 1 — Accountant
+* **Load:** 1C:Enterprise (1C:Бухгалтерия), multi-sheet Excel workbooks, PDF invoices, email, and Kazakhstan banking/eGov portals (Kaspi, Halyk, NCALayer) running 8 hours a day.
+* **Bottleneck:** **Reliability, screen legibility, and responsive storage/RAM** for simultaneous 1C + Excel + browser portals—not multi-core CPU or 3D graphics.
+* **Trade-off:** Chose an **Intel Core i3-12100 OEM** (4c/8t with integrated UHD 730 graphics + DeepCool AG200 cooler) on an **MSI PRO H610M-G DDR4** board with **1×16 GB DDR4-3200** instead of an i5 or 32 GB RAM. Using a single 16 GB stick leaves the second DIMM slot open on the 2-slot board for a simple 32 GB upgrade later, and skipping a discrete GPU saves ~300,000 KZT for the designer.
+* **OS:** Licensed **Windows 11 Home 64-bit** — required because 1C:Enterprise, NCALayer, and local bank-client plugins are Windows-native.
+* **Total:** **528,560 KZT** (`budget.csv`, rows 2–12)
+
+---
+
+### Build 2 — Sales Manager
+* **Load:** Web-based CRM (Bitrix24/amoCRM) in Chrome with 30–40 open tabs, Excel price lists, Telegram/WhatsApp Desktop, and 3–4 hours of Zoom/Teams video calls daily.
+* **Bottleneck:** **Memory (RAM) and browser tab responsiveness** during simultaneous video calls and CRM work—not 3D graphics.
+* **Trade-off:** Chose a 6-core **AMD Ryzen 5 5600GT OEM** (AM4, integrated Vega 7 graphics + DeepCool AG200 cooler) on a **Gigabyte B550M GAMING X** board, and accepted **1×16 GB DDR4-3200** (`104,990 KZT`) instead of a 32 GB DDR4 kit (`174,140 KZT`) to save **69,150 KZT** and keep the 4-machine grand total under 3,000,000 KZT (especially given high DDR5 prices on the Web Developer build). Because the B550M board has **4 DIMM slots**, 3 slots remain free for an immediate second 16 GB stick as soon as next quarter's budget opens.
+* **OS:** Licensed **Windows 11 Home 64-bit** — ensures full compatibility with MS Office macros, corporate VPNs, and conferencing clients.
+* **Total:** **588,050 KZT** (`budget.csv`, rows 13–23)
+
+---
+
+### Build 3 — Web Developer
+* **Load:** VS Code / JetBrains IDE, 3–5 local Docker containers (PostgreSQL, Redis, Nginx, backend API), Node.js/Webpack builds, 20+ DevTools browser tabs, and occasional VirtualBox test VMs for 8+ hours a day.
+* **Bottleneck:** **RAM capacity, multi-threaded compile/build speed, and storage IOPS.** Containers + IDE + local DB routinely exceed 16 GB, and slow single-core/I/O performance stalls builds.
+* **Trade-off:** Chose **Ubuntu Desktop 24.04 LTS** (0 KZT, commercially licensed under GNU GPL) instead of Windows 11 (`89,790 KZT` saved) and skipped a discrete GPU (using the **Ryzen 5 7600's** integrated RDNA2 graphics). Reinvested those savings into the future-proof **AM5 / DDR5** platform (**32 GB AGI Turbosprint DDR5-6000**) and a **27" QHD (2560×1440) IPS** monitor (`LG 27QN600-B`) for higher code density, while picking the 6-core Ryzen 5 7600 over an 8-core Ryzen 7 7700 to stay in budget.
+* **OS:** **Ubuntu Desktop 24.04 LTS** — legally licensed for commercial use at 0 KZT, runs Docker natively without WSL2 memory overhead, and matches Linux production servers.
+* **Total:** **777,858 KZT** (`budget.csv`, rows 24–34)
+
+---
+
+### Build 4 — Designer
+* **Load:** Adobe Photoshop (multi-layered 300 DPI print files), Illustrator, Figma, and occasional Premiere Pro / After Effects exports, 8 hours a day.
+* **Bottleneck:** **GPU acceleration/VRAM, display color accuracy, and RAM.** Adobe filters, canvas rendering, and exports rely on NVIDIA CUDA and VRAM; inaccurate monitors cause costly print/brand color mismatches; large layered PSDs saturate 16 GB RAM.
+* **Trade-off:** Chose an **Intel Core i5-12400F** (6c/12t, no iGPU—saving ~24,000 KZT vs. the non-F 12400 since a dedicated GPU is installed) on **LGA1700 / DDR4** (`MSI PRO H610M-G DDR4` + `32 GB Kingston FURY Beast DDR4-3200`) instead of an AM5/DDR5 platform or i7 CPU. This freed budget to afford both an **MSI GeForce RTX 3060 Ventus 2X 12G OC** (12 GB VRAM handles large textures/timelines better than 8 GB cards) and a factory-calibrated **ASUS ProArt PA279CV 27" 4K IPS** monitor (`252,000 KZT`).
+* **OS:** Licensed **Windows 11 Home 64-bit** — required because Adobe Creative Cloud has no native Linux support.
+* **Total:** **1,094,708 KZT** (`budget.csv`, rows 35–46)
