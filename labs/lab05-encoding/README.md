@@ -23,7 +23,7 @@ evidence/staff-broken.csv: Non-ISO extended-ASCII text, with CRLF line terminato
   (evidence/hexdump-before.txt)
 - Encoding: KZ-1048 — because file contains specific single-byte hex values for Cyrillic and Kazakh characters, like a3
 - Line ending: CRLF — because 0d0a
-- BOM: no — because 49 44; in the fixed file I <kept / removed / added> it because <reason>
+- BOM: no — because 49 44; in the fixed file I did not add it because it will disrupt columns name lookups on linux
 
 ## Fix
 Converted from RK1048 to UTF-8 into evidence/staff-fixed.csv using scripts/fix.sh (iconv -f RK1048 -t UTF-8)  
