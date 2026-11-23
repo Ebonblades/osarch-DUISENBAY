@@ -27,6 +27,7 @@ out="evidence/staff-fixed.csv"
 
 iconv -f RK1048 -t UTF-8 "$in" \vert{} sed 's/;/,/g' > "$out"
 printf '\357\273\277' | cat - "$out" > tmp && mv tmp "$out"
+```
 [Three-application verification screenshot](evidence/opens-correctly.png)
 
 ## Verification
@@ -36,3 +37,4 @@ Three-application check: evidence/staff-fixed.csv opens with all Russian and Kaz
 
 ## What did not work the first time
 BOM mismatch between script and evidence: Running iconv -f RK1048 -t UTF-8 alone does not add a BOM. Updating scripts/fix.sh to prepend \357\273\277 (EF BB BF) and regenerating evidence/staff-fixed.csv and evidence/file-after.txt resolved the mismatch.
+
