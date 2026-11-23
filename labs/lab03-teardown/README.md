@@ -15,7 +15,7 @@ Source: https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/am
 Source: https://www.intel.com/content/www/us/en/products/sku/230495/intel-core-i513400-processor-20m-cache-up-to-4-60-ghz/specifications.html
 
 ### ASUS PRIME B650M-A
-![](evidence/asus-prime-b650m-a.png)  
+![](evidence/asus-prime-b560m-a.png)  
 Micro-ATX motherboard, AMD B650 chipset. Connects to an AM5 processor, 4× DDR5 DIMM slots, 2× M.2 NVMe slots, and 4× SATA 6Gb/s ports. CPU support: AMD Ryzen 7000, 8000, and 9000 Series desktop processors (BIOS update required for 8000/9000 Series). Limit: supports only compatible AM5 Ryzen processors; DDR5 slots make DDR4 impossible.  
 Source: https://www.asus.com/motherboards-components/motherboards/prime/prime-b650m-a/
 
@@ -99,4 +99,5 @@ Running the spec commands as a single pasted block failed to capture the outputs
 ## Evidence
 - [evidence/windows-specs.txt](evidence/windows-specs.txt) — Windows specs
 - [evidence/linux-specs.txt](evidence/linux-specs.txt) — Linux specs
+
 
