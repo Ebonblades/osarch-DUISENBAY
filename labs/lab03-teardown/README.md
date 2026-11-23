@@ -1,6 +1,6 @@
 # Lab 3 — Teardown, and the same machine from the command line
 
-Pair: Bauyrzhan · Date: 11.8.2026
+Pair: Duisenbay Bauyrzhan/Maratov Anuar · Date: 11.8.2026
 
 Part 1 — Ten parts
 AMD Ryzen 5 7600
@@ -96,3 +96,4 @@ Commands provided to retrieve specs did not work, after which I tried typing eac
 ## Evidence
 - [evidence/windows-specs.txt](evidence/windows-specs.txt) — Windows specs
 - [evidence/linux-specs.txt](evidence/linux-specs.txt) — Linux specs
+
