@@ -1,0 +1,16 @@
+﻿
+
+           Path: C:\lab05-encoding\evidence\staff-broken.csv
+
+           00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+00000000   49 44 3B D4 E0 EC E8 EB E8 FF 3B C8 EC FF 3B CE  ID;Ôàìèëè.;Èì.;Î
+00000010   F2 E4 E5 EB 3B C4 EE EB E6 ED EE F1 F2 FC 3B C3  òäåë;Äîëæíîñòü;Ã
+00000020   EE F0 EE E4 0D 0A 31 30 31 3B A3 E1 E4 B3 F0 E0  îðîä..101;£áä³ðà
+00000030   F5 EC E0 ED EE E2 E0 3B C0 F0 F3 E6 E0 ED 3B C1  õìàíîâà;Àðóæàí;Á
+00000040   F3 F5 E3 E0 EB F2 E5 F0 E8 FF 3B C3 EB E0 E2 ED  óõãàëòåðè.;Ãëàâí
+00000050   FB E9 20 E1 F3 F5 E3 E0 EB F2 E5 F0 3B C0 EB EC  ûé áóõãàëòåð;Àëì
+00000060   E0 F2 FB 0D 0A 31 30 32 3B C8 E2 E0 ED EE E2 3B  àòû..102;Èâàíîâ;
+00000070   D1 E5 F0 E3 E5 E9 3B C8 D2 2D EE F2 E4 E5 EB 3B  Ñåðãåé;ÈÒ-îòäåë;
+
+
