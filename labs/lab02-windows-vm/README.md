@@ -1,6 +1,6 @@
 # Lab 2 — A Windows guest, and a network between them
 
-Pair: Duisenbay Bayurzhan Machine: acer laptop, windows, 16 gb RAM, 24 cores, guests Ubuntu Server + Windows 11 Enterprise eval
+Pair: Duisenbay Bayurzhan/ Maratov Anuar Machine: acer laptop, windows, 16 gb RAM, 24 cores, guests Ubuntu Server + Windows 11 Enterprise eval
 Date: 02.11.26
 
 ## What I did
@@ -42,3 +42,4 @@ Next there was a stutter with the attempt to ping from UBUNTU to Windows, the co
 - [evidence/ping-both-ways.txt](evidence/ping-both-ways.txt) — both directions and the internet
 - [evidence/host-memory-before.png](evidence/host-memory-before.png) — host memory, guests off
 - [evidence/host-memory-after.png](evidence/host-memory-after.png) — host memory, both guests overcommitted
+
