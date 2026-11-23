@@ -28,7 +28,7 @@ out="evidence/staff-fixed.csv"
 iconv -f RK1048 -t UTF-8 "$in" \vert{} sed 's/;/,/g' > "$out"
 printf '\357\273\277' | cat - "$out" > tmp && mv tmp "$out"
 [Three-application verification screenshot](evidence/opens-correctly.png)
-
+```
 ## Verification
 evidence/file-after.txt: Confirms Unicode text, UTF-8 (with BOM) text with CRLF line endings, and the hex dump starts with efbb bf (EF BB BF UTF-8 BOM). Cyrillic and Kazakh letters appear as valid multi-byte UTF-8 sequences (e.g., d0 a4 for Ф, d3 98 for Ә).  
 Three-application check: evidence/staff-fixed.csv opens with all Russian and Kazakh letters displayed correctly and columns properly separated in Excel, LibreOffice Calc, and the Ubuntu terminal (cat evidence/staff-fixed.csv)  
@@ -36,5 +36,6 @@ Three-application check: evidence/staff-fixed.csv opens with all Russian and Kaz
 
 ## What did not work the first time
 Table contents did not turn correctly in each column inside Excel, after I tried sep= it still failed, need to proceed to ask instructor how to manage it correctly in the next lesson
+
 
 
