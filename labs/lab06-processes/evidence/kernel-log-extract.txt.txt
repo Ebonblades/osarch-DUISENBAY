@@ -1,0 +1,243 @@
+Nov 24 14:13:03 lab01-bauyrzhan kernel: workqueue: blk_mq_run_work_fn hogged CPU for >10000us 515 times, consider switching to WQ_UNBOUND
+Nov 24 14:13:11 lab01-bauyrzhan kernel: workqueue: e1000_watchdog [e1000] hogged CPU for >10000us 7 times, consider switching to WQ_UNBOUND
+Nov 24 14:13:57 lab01-bauyrzhan kernel: workqueue: blk_mq_run_work_fn hogged CPU for >10000us 1027 times, consider switching to WQ_UNBOUND
+Nov 24 14:18:18 lab01-bauyrzhan kernel: bash invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=0
+Nov 24 14:18:18 lab01-bauyrzhan kernel: CPU: 1 UID: 1000 PID: 1743 Comm: bash Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:18:18 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:18:18 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:18:18 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:18:18 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:18:18 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:18:18 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:18:18 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:18:18 lab01-bauyrzhan kernel: [   2750]  1000  2750   704634   412511   412373      130         8  5447680   254819          1000 stress-ng-vm
+Nov 24 14:18:18 lab01-bauyrzhan kernel: [   2751]  1000  2751   704634   393737   393598      130         9  5251072   248971          1000 stress-ng-vm
+Nov 24 14:18:18 lab01-bauyrzhan kernel: [   2759]  1000  2759     4028      968      306      662         0    69632        0             0 sleep
+Nov 24 14:18:18 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2750,uid=1000
+Nov 24 14:18:18 lab01-bauyrzhan kernel: Out of memory: Killed process 2750 (stress-ng-vm) total-vm:2818536kB, anon-rss:1649492kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:5320kB oom_score_adj:1000
+Nov 24 14:18:22 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:18:22 lab01-bauyrzhan kernel: CPU: 0 UID: 1000 PID: 2760 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:18:22 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:18:22 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:18:22 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:18:22 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:18:22 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:18:22 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:18:22 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:18:22 lab01-bauyrzhan kernel: [   2751]  1000  2751   704634   217319   217187      131         1  5586944   467560          1000 stress-ng-vm
+Nov 24 14:18:22 lab01-bauyrzhan kernel: [   2760]  1000  2760   704634   580297   580165      131         1  5033984    35462          1000 stress-ng-vm
+Nov 24 14:18:22 lab01-bauyrzhan kernel: [   2763]  1000  2763     4028      968      306      662         0    77824        0             0 sleep
+Nov 24 14:18:22 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2751,uid=1000
+Nov 24 14:18:22 lab01-bauyrzhan kernel: Out of memory: Killed process 2751 (stress-ng-vm) total-vm:2818536kB, anon-rss:868748kB, file-rss:524kB, shmem-rss:4kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:18:29 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:18:29 lab01-bauyrzhan kernel: CPU: 0 UID: 1000 PID: 2760 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:18:29 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:18:29 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:18:29 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:18:29 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:18:29 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:18:29 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:18:29 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:18:29 lab01-bauyrzhan kernel: [   2760]  1000  2760   704634   211526   211395      130         1  5586944   473352          1000 stress-ng-vm
+Nov 24 14:18:29 lab01-bauyrzhan kernel: [   2764]  1000  2764   704634   587947   587808      130         9  5050368    29559          1000 stress-ng-vm
+Nov 24 14:18:29 lab01-bauyrzhan kernel: [   2770]  1000  2770     4028      989      305      684         0    69632        0             0 sleep
+Nov 24 14:18:29 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2760,uid=1000
+Nov 24 14:18:29 lab01-bauyrzhan kernel: Out of memory: Killed process 2760 (stress-ng-vm) total-vm:2818536kB, anon-rss:845580kB, file-rss:520kB, shmem-rss:4kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:18:34 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:18:34 lab01-bauyrzhan kernel: CPU: 1 UID: 1000 PID: 2771 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:18:34 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:18:34 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:18:34 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:18:34 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:18:34 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:18:34 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:18:34 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:18:34 lab01-bauyrzhan kernel: [   2764]  1000  2764   704634   412839   412707      132         0  5586944   272040          1000 stress-ng-vm
+Nov 24 14:18:34 lab01-bauyrzhan kernel: [   2771]  1000  2771   704634   387879   387748      131         0  5062656   231463          1000 stress-ng-vm
+Nov 24 14:18:34 lab01-bauyrzhan kernel: [   2777]  1000  2777     4028      658        0      658         0    77824      306             0 sleep
+Nov 24 14:18:34 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2764,uid=1000
+Nov 24 14:18:34 lab01-bauyrzhan kernel: Out of memory: Killed process 2764 (stress-ng-vm) total-vm:2818536kB, anon-rss:1650828kB, file-rss:528kB, shmem-rss:0kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:18:37 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:18:37 lab01-bauyrzhan kernel: CPU: 0 UID: 1000 PID: 2778 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:18:37 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:18:37 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:18:37 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:18:37 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:18:37 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:18:37 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:18:37 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:18:37 lab01-bauyrzhan kernel: [   2771]  1000  2771   704634   198500   198370      130         0  5586944   486377          1000 stress-ng-vm
+Nov 24 14:18:37 lab01-bauyrzhan kernel: [   2778]  1000  2778   704634   603039   602906      130         3  5074944    17527          1000 stress-ng-vm
+Nov 24 14:18:37 lab01-bauyrzhan kernel: [   2781]  1000  2781     4028      959      305      654         0    69632        0             0 sleep
+Nov 24 14:18:37 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2771,uid=1000
+Nov 24 14:18:37 lab01-bauyrzhan kernel: Out of memory: Killed process 2771 (stress-ng-vm) total-vm:2818536kB, anon-rss:793480kB, file-rss:520kB, shmem-rss:0kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:18:43 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:18:43 lab01-bauyrzhan kernel: CPU: 0 UID: 1000 PID: 2782 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:18:43 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:18:43 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:18:43 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:18:43 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:18:43 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:18:43 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:18:43 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:18:43 lab01-bauyrzhan kernel: [   2778]  1000  2778   704634   389980   389850      130         0  5586944   294897          1000 stress-ng-vm
+Nov 24 14:18:43 lab01-bauyrzhan kernel: [   2782]  1000  2782   704634   408529   408398      131         0  5046272   208765          1000 stress-ng-vm
+Nov 24 14:18:43 lab01-bauyrzhan kernel: [   2785]  1000  2785     4028      989      305      684         0    69632        0             0 sleep
+Nov 24 14:18:43 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2778,uid=1000
+Nov 24 14:18:43 lab01-bauyrzhan kernel: Out of memory: Killed process 2778 (stress-ng-vm) total-vm:2818536kB, anon-rss:1559400kB, file-rss:520kB, shmem-rss:0kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:18:47 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:18:47 lab01-bauyrzhan kernel: CPU: 1 UID: 1000 PID: 2786 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:18:47 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:18:47 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:18:47 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:18:47 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:18:47 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:18:47 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:18:47 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:18:47 lab01-bauyrzhan kernel: [   2782]  1000  2782   704634   190702   190572      130         0  5586944   494175          1000 stress-ng-vm
+Nov 24 14:18:47 lab01-bauyrzhan kernel: [   2786]  1000  2786   704634   612053   611923      130         0  5079040     9336          1000 stress-ng-vm
+Nov 24 14:18:47 lab01-bauyrzhan kernel: [   2792]  1000  2792     4028      975      306      669         0    73728        0             0 sleep
+Nov 24 14:18:47 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2782,uid=1000
+Nov 24 14:18:47 lab01-bauyrzhan kernel: Out of memory: Killed process 2782 (stress-ng-vm) total-vm:2818536kB, anon-rss:762288kB, file-rss:520kB, shmem-rss:0kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:18:52 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:18:52 lab01-bauyrzhan kernel: CPU: 0 UID: 1000 PID: 2786 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:18:52 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:18:52 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:18:52 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:18:52 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:18:52 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:18:52 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:18:52 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:18:52 lab01-bauyrzhan kernel: [   2786]  1000  2786   704634   394406   394276      130         0  5586944   290471          1000 stress-ng-vm
+Nov 24 14:18:52 lab01-bauyrzhan kernel: [   2793]  1000  2793   704634   360901   360770      130         1  4702208   212943          1000 stress-ng-vm
+Nov 24 14:18:52 lab01-bauyrzhan kernel: [   2796]  1000  2796     4028      949      306      643         0    69632        0             0 sleep
+Nov 24 14:18:52 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2786,uid=1000
+Nov 24 14:18:52 lab01-bauyrzhan kernel: Out of memory: Killed process 2786 (stress-ng-vm) total-vm:2818536kB, anon-rss:1577104kB, file-rss:520kB, shmem-rss:0kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:18:55 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:18:55 lab01-bauyrzhan kernel: CPU: 0 UID: 1000 PID: 2793 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:18:55 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:18:55 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:18:55 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:18:55 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:18:55 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:18:55 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:18:55 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:18:55 lab01-bauyrzhan kernel: [   2793]  1000  2793   704634   182460   182329      130         1  5586944   502418          1000 stress-ng-vm
+Nov 24 14:18:55 lab01-bauyrzhan kernel: [   2797]  1000  2797   704634   619963   619830      130         3  5079040      986          1000 stress-ng-vm
+Nov 24 14:18:55 lab01-bauyrzhan kernel: [   2800]  1000  2800     4028      975      306      669         0    77824        0             0 sleep
+Nov 24 14:18:55 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2793,uid=1000
+Nov 24 14:18:55 lab01-bauyrzhan kernel: Out of memory: Killed process 2793 (stress-ng-vm) total-vm:2818536kB, anon-rss:729316kB, file-rss:520kB, shmem-rss:4kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:19:00 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:19:00 lab01-bauyrzhan kernel: CPU: 0 UID: 1000 PID: 2797 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:19:00 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:19:00 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:19:00 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:19:00 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:19:00 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:19:00 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:19:00 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:19:00 lab01-bauyrzhan kernel: [   2797]  1000  2797   704634   416119   415987      130         2  5586944   268760          1000 stress-ng-vm
+Nov 24 14:19:00 lab01-bauyrzhan kernel: [   2801]  1000  2801   704634   352633   352501      130         2  4808704   234566          1000 stress-ng-vm
+Nov 24 14:19:00 lab01-bauyrzhan kernel: [   2804]  1000  2804     4028      967      305      662         0    73728        0             0 sleep
+Nov 24 14:19:00 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2797,uid=1000
+Nov 24 14:19:00 lab01-bauyrzhan kernel: Out of memory: Killed process 2797 (stress-ng-vm) total-vm:2818536kB, anon-rss:1663948kB, file-rss:520kB, shmem-rss:8kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:19:03 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:19:03 lab01-bauyrzhan kernel: CPU: 1 UID: 1000 PID: 2805 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:19:03 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:19:03 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:19:03 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:19:03 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:19:03 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:19:03 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:19:03 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:19:03 lab01-bauyrzhan kernel: [   2801]  1000  2801   704634   303920   303788      130         2  5586944   380959          1000 stress-ng-vm
+Nov 24 14:19:03 lab01-bauyrzhan kernel: [   2805]  1000  2805   704634   493362   493230      130         2  5033984   122372          1000 stress-ng-vm
+Nov 24 14:19:03 lab01-bauyrzhan kernel: [   2808]  1000  2808     4028      978      306      672         0    77824        0             0 sleep
+Nov 24 14:19:03 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2801,uid=1000
+Nov 24 14:19:03 lab01-bauyrzhan kernel: Out of memory: Killed process 2801 (stress-ng-vm) total-vm:2818536kB, anon-rss:1215152kB, file-rss:520kB, shmem-rss:8kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:19:07 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:19:07 lab01-bauyrzhan kernel: CPU: 1 UID: 1000 PID: 2805 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:19:07 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:19:07 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:19:07 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:19:07 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:19:07 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:19:07 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:19:07 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:19:07 lab01-bauyrzhan kernel: [   2805]  1000  2805   704634   329791   329659      130         2  5586944   355088          1000 stress-ng-vm
+Nov 24 14:19:07 lab01-bauyrzhan kernel: [   2809]  1000  2809   704634   468695   468563      130         2  5042176   147708          1000 stress-ng-vm
+Nov 24 14:19:07 lab01-bauyrzhan kernel: [   2812]  1000  2812     4028      976      306      670         0    81920        0             0 sleep
+Nov 24 14:19:07 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2805,uid=1000
+Nov 24 14:19:07 lab01-bauyrzhan kernel: Out of memory: Killed process 2805 (stress-ng-vm) total-vm:2818536kB, anon-rss:1318636kB, file-rss:520kB, shmem-rss:8kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:19:11 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:19:11 lab01-bauyrzhan kernel: CPU: 0 UID: 1000 PID: 2813 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:19:11 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:19:11 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:19:11 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:19:11 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:19:11 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:19:11 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:19:11 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:19:11 lab01-bauyrzhan kernel: [   2809]  1000  2809   704634   182628   182496      130         2  5586944   502251          1000 stress-ng-vm
+Nov 24 14:19:11 lab01-bauyrzhan kernel: [   2813]  1000  2813   704634   615895   615762      130         3  5042176      461          1000 stress-ng-vm
+Nov 24 14:19:11 lab01-bauyrzhan kernel: [   2819]  1000  2819     4028      880      208      672         0    73728       97             0 sleep
+Nov 24 14:19:11 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2809,uid=1000
+Nov 24 14:19:11 lab01-bauyrzhan kernel: Out of memory: Killed process 2809 (stress-ng-vm) total-vm:2818536kB, anon-rss:729984kB, file-rss:520kB, shmem-rss:8kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:19:15 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:19:15 lab01-bauyrzhan kernel: CPU: 0 UID: 1000 PID: 2813 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:19:15 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:19:15 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:19:15 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:19:15 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:19:15 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:19:15 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:19:15 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:19:15 lab01-bauyrzhan kernel: [   2813]  1000  2813   704634   425207   425077      130         0  5586944   259670          1000 stress-ng-vm
+Nov 24 14:19:15 lab01-bauyrzhan kernel: [   2820]  1000  2820   704634   348199   348069      130         0  4841472   243135          1000 stress-ng-vm
+Nov 24 14:19:15 lab01-bauyrzhan kernel: [   2823]  1000  2823     4028      979      305      674         0    77824        0             0 sleep
+Nov 24 14:19:15 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2813,uid=1000
+Nov 24 14:19:15 lab01-bauyrzhan kernel: Out of memory: Killed process 2813 (stress-ng-vm) total-vm:2818536kB, anon-rss:1700308kB, file-rss:520kB, shmem-rss:0kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:19:18 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:19:18 lab01-bauyrzhan kernel: CPU: 1 UID: 1000 PID: 2824 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:19:18 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:19:18 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:19:18 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:19:18 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:19:18 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:19:18 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:19:18 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:19:18 lab01-bauyrzhan kernel: [   2820]  1000  2820   704634   182884   182754      130         0  5586944   501993          1000 stress-ng-vm
+Nov 24 14:19:18 lab01-bauyrzhan kernel: [   2824]  1000  2824   704634   619102   618970      130         2  5066752      750          1000 stress-ng-vm
+Nov 24 14:19:18 lab01-bauyrzhan kernel: [   2826]  1000  2826     2211      179       99       80         0    53248      318             0 bash
+Nov 24 14:19:18 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2820,uid=1000
+Nov 24 14:19:18 lab01-bauyrzhan kernel: Out of memory: Killed process 2820 (stress-ng-vm) total-vm:2818536kB, anon-rss:731016kB, file-rss:520kB, shmem-rss:0kB, UID:1000 pgtables:5456kB oom_score_adj:1000
+Nov 24 14:19:24 lab01-bauyrzhan kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 24 14:19:24 lab01-bauyrzhan kernel: CPU: 1 UID: 1000 PID: 2828 Comm: stress-ng-vm Tainted: G        W  OE       7.0.0-38-generic #38-Ubuntu PREEMPT(lazy)
+Nov 24 14:19:24 lab01-bauyrzhan kernel: Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+Nov 24 14:19:24 lab01-bauyrzhan kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 24 14:19:24 lab01-bauyrzhan kernel: Call Trace:
+Nov 24 14:19:24 lab01-bauyrzhan kernel:  <TASK>
+Nov 24 14:19:24 lab01-bauyrzhan kernel:  show_stack+0x49/0x60
+Nov 24 14:19:24 lab01-bauyrzhan kernel:  dump_stack_lvl+0x5f/0x90
+Nov 24 14:19:24 lab01-bauyrzhan kernel:  dump_stack+0x10/0x18
+--
+Nov 24 14:19:24 lab01-bauyrzhan kernel: [   2824]  1000  2824   704634   403448   403316      131         1  5586944   281431          1000 stress-ng-vm
+Nov 24 14:19:24 lab01-bauyrzhan kernel: [   2828]  1000  2828   704634   397420   397289      130         1  5054464   220898          1000 stress-ng-vm
+Nov 24 14:19:24 lab01-bauyrzhan kernel: [   2831]  1000  2831     4028      968      306      662         0    73728        0             0 sleep
+Nov 24 14:19:24 lab01-bauyrzhan kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2824,uid=1000
+Nov 24 14:19:24 lab01-bauyrzhan kernel: Out of memory: Killed process 2824 (stress-ng-vm) total-vm:2818536kB, anon-rss:1613264kB, file-rss:524kB, shmem-rss:4kB, UID:1000 pgtables:5456kB oom_score_adj:1000
