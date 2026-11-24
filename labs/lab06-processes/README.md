@@ -109,8 +109,8 @@ Explanation: Because the Windows guest never ran out of virtual commit memory, n
 
 ## Evidence
 
-- `evidence/task-manager.png`
-- `evidence/process-explorer.png`
-- `evidence/htop.png`
-- `evidence/memory-pressure.txt`
-- `evidence/kernel-log-extract.txt`
+- [evidence/task-manager.png](evidence/task-manager.png)
+- [evidence/process-explorer.png](evidence/process-explorer.png)
+- [evidence/htop.png](evidence/htop.png)
+- [evidence/memory-pressure.txt](evidence/memory-pressure.txt)
+- [evidence/kernel-log-extract.txt](evidence/kernel-log-extract.txt)
